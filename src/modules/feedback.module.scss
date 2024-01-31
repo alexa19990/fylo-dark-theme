@@ -1,0 +1,59 @@
+.feedback-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+
+    .row-align{
+        display: flex;
+        flex-direction: row;
+        @media only screen and (max-width:480px) {
+            flex-direction: column;
+        }
+        gap: 50px;
+        .feedback-box{
+            width: 400px;
+            background-color: hsl(219, 30%, 18%);
+            padding: 30px;
+            border-radius: 9px;
+            p{
+                color: white;
+                font-size: 17px;                        
+            }
+        
+            .feedback-roleSide{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+
+                h4{
+                    color: white;
+                    margin: 5px 0px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+                p{
+                    margin: 0px;
+                    font-size: 13px;
+                    color: rgb(177, 177, 177);
+                }
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    
+    }
+}
+
+.annotations{
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 230px;
+    left: 210px;
+}

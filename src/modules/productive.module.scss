@@ -1,0 +1,30 @@
+.productive-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 100px;
+    @media only screen and (max-width:480px) {
+        flex-direction: column;
+    }
+
+    img{
+        @media only screen and (max-width:480px) {
+            width: 480px;
+        }
+    }
+    margin-top: 200px;
+    .productive-textSide{
+        h1{
+            color: white;
+        }
+        // width: 600px;
+        p{
+            color: rgb(177, 177, 177);
+        }
+        .underline{
+            color: lightgreen;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
